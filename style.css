@@ -1,0 +1,324 @@
+/*para todos los elementos de la pagina * selector universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*fondo - color del texto*/
+body {
+    background: white;
+    color: darkblue;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*enlaces o etiquetas*/
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* tamaño del contenido y centrado*/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ESTILOS DE LA NAVEGACIÓN */
+/*display flex permite organizar los elementos*/
+/*padding 20 arriba y abajo y cero hacia los lados*/
+.nav-main {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 125px;
+}
+
+/*navegación ul - de la izquierda*/
+.nav-main ul {
+    display: flex;
+}
+
+/*para espaciado interno de los li*/
+.nav-main ul li {
+    padding: 10px;
+}
+
+/*desde el nav menu a su etiqueta a*/
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #333333;
+}
+
+.nav-main ul li a i {
+    margin: 0 10px;
+}
+
+/*distancia al lado izquierdo con un espaciado margin-left*/
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* ya no es necesario: nav-main ul.nav-menu-right a {
+    flex: 1;
+}
+
+/*SHOWCASE*/
+
+/*espaciado entre la linea de navegacion y el showcase*/
+hr {
+    margin: 8px 0;
+}
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: #0000cc no-repeat center center/cover;
+    color: white;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.showcaseone {
+    text-align: center;
+    padding-right: 30px;
+}
+
+.showcase h2 {
+    margin-bottom: 10px;
+}
+
+/*imagen inicial*/
+.principal img{
+    width: 100%;
+    height: 400px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+.btn-two {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #333333;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+/*para opacidad en el boton, en este caso no aplica
+.btn.hover {
+    opacity: .1;
+}
+*/
+
+/*News cards*/
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 180px;
+}
+
+.news-cards h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.news-cards a {
+    padding: 10px 0;
+    color: #333333;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+/*CARDS BANNERS*/
+
+.cards-banner-one
+.cards-banner-three {
+    width: 100%;
+    height: 10px;
+    background: white;
+    margin-bottom: 20px;
+    font-size: 15px;    
+}
+
+/*orden padding 20x arriba, 0 abajo, 0 derecha, 30 izquierda*/
+
+.cards-banner-two content {
+    width: 50%;
+    padding: 20px 0 0 30px;
+}
+
+.cards-banner-two {
+    width: 100%;
+    height: 200px;
+    background: #fffe65;
+    margin-bottom: 10px;
+}
+
+/*orden padding 20x arriba, 0 abajo, 0 derecha, 30 izquierda*/
+
+.cards-banner-two content {
+    width: 50%;
+    padding: 20px 0 0 30px;
+}
+
+.cards-banner-two p, 
+.cards-banner-two h2 {
+    margin: 10px 0;
+}
+
+/*NEWS CARDS SECOND PART*/
+.news-cards-second {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-cards-second img {
+    width: 100%;
+    height: 180px;
+
+}
+
+.news-cards-second h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.news-cards-second a {
+    padding: 10px 0;
+    color: #333333;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.news-cards-second a:hover {
+    text-decoration: underline;
+}
+
+/*Redes Sociales*/
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links i {
+    font-size: 1rem;
+}
+
+.footer-one {
+    font-size: 14px;
+    padding: 35px 100px;   
+}
+
+/*aqui se centra el contenido*/
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: center;  
+}
+
+.footer-info ul li {
+    color: white;
+    margin: 0 auto;
+}
+.footer {
+    background: #333333;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width:720px) {
+
+
+    .news-cards-second {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards-banner-one .content{
+        width: 80%;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .showcase {
+        grid-template-columns: 1fr;
+       
+      
+    }
+
+    /*por solucionar tamaño de la imagen ver flex*/
+    .principal{
+        width: 100%;
+    }
+
+}
